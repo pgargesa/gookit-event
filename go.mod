@@ -1,4 +1,4 @@
-module github.com/gookit/event
+module github.com/pgargesa/gookit-event
 
 go 1.18
 
