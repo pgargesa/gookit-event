@@ -9,7 +9,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/gookit/event/simpleevent"
+	"github.com/pgargesa/gookit-event/simpleevent"
 )
 
 func main() {

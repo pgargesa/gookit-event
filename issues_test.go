@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/gookit/event"
+	"github.com/pgargesa/gookit-event"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -75,7 +75,7 @@ func makeFn(a int) event.ListenerFunc {
 }
 
 // https://github.com/gookit/event/issues/20
-func TestIssues_20(t *testing.T)  {
+func TestIssues_20(t *testing.T) {
 	buf := new(bytes.Buffer)
 	mgr := event.NewManager("test")
 

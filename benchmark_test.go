@@ -3,7 +3,7 @@ package event_test
 import (
 	"testing"
 
-	"github.com/gookit/event"
+	"github.com/pgargesa/gookit-event"
 )
 
 func BenchmarkManager_Fire_no_listener(b *testing.B) {
