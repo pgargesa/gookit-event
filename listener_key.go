@@ -4,14 +4,13 @@ package event
 import (
 	"fmt"
 	"reflect"
-	"unsafe"
 	_ "unsafe" // go linkname
 )
 
 func getReflectRawPointer(v reflect.Value) uintptr {
 	switch v.Kind() {
-	case reflect.Func:
-		return uintptr(getNativePointerLink(&v))
+	//case reflect.Func:
+	//	return uintptr(getNativePointerLink(&v))
 	case reflect.Pointer, reflect.Chan, reflect.Map, reflect.UnsafePointer:
 		return v.Pointer()
 	default:
@@ -21,7 +20,7 @@ func getReflectRawPointer(v reflect.Value) uintptr {
 
 // only validate in reflect.Pointer, reflect.Chan, reflect.Map, reflect.UnsafePointer, reflect.Func
 //go:linkname getNativePointerLink  reflect.(*Value).pointer
-func getNativePointerLink(*reflect.Value) unsafe.Pointer
+//func getNativePointerLink(*reflect.Value) unsafe.Pointer
 
 type listenerCompareKey struct {
 	strData string

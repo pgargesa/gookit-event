@@ -11,7 +11,7 @@ import (
 const Wildcard = "*"
 
 // regex for check good event name.
-var goodNameReg = regexp.MustCompile(`^[a-zA-Z][\w-.*]*$`)
+var goodNameReg = regexp.MustCompile(`^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$`)
 
 // M is short name for map[string]...
 type M = map[string]any

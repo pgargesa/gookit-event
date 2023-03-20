@@ -1,7 +1,6 @@
 package event
 
 import (
-	"reflect"
 	"sort"
 )
 
@@ -109,9 +108,9 @@ func (lq *ListenerQueue) Clear() {
 }
 
 /////
-func getListenCompareKey(src Listener) reflect.Value {
-	return reflect.ValueOf(src)
-}
+//func getListenCompareKey(src Listener) reflect.Value {
+//	return reflect.ValueOf(src)
+//}
 
 /*************************************************************
  * Sorted PriorityItems
