@@ -16,10 +16,6 @@ Lightweight event management, dispatch tool library implemented by Go
 - Support for using the wildcard `*` to listen for triggers for all events
 - Complete unit testing, unit coverage `> 95%`
 
-## [中文说明](README.zh-CN.md)
-
-中文说明请看 **[README.zh-CN](README.zh-CN.md)**
-
 ## GoDoc
 
 - [Godoc for github](https://pkg.go.dev/github.com/gookit/event)
