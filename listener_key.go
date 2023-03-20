@@ -19,7 +19,8 @@ func getReflectRawPointer(v reflect.Value) uintptr {
 }
 
 // only validate in reflect.Pointer, reflect.Chan, reflect.Map, reflect.UnsafePointer, reflect.Func
-//go:linkname getNativePointerLink  reflect.(*Value).pointer
+//
+// getNativePointerLink  reflect.(*Value).pointer
 //func getNativePointerLink(*reflect.Value) unsafe.Pointer
 
 type listenerCompareKey struct {
